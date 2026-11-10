@@ -3,36 +3,43 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portafolio de Niko</title>
+    <title>Portafolio de Nikolas</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+<body class="backgroundColor">
+    <nav class="navbar navbar-expand" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand">Niko</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav"
-                    aria-expanded="false" aria-label="Alternar navegación">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#inicio">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-                </ul>
-            </div>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link letterColor" aria-current="page" href="#inicio">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link letterColor" href="#proyectos">Proyectos</a></li>
+                <li class="nav-item"><a class="nav-link letterColor" href="#contacto">Contacto</a></li>
+            </ul>
         </div>
     </nav>
 
-    <main class="container" id="inicio" class="row">
-        <h1>Nombre</h1>
-        <p>Desarrollador Web Full Stack</p>
-        <p><i class="bi bi-geo-alt"></i> Heredia, Costa Rica</p>
-        <button class="btn btn-primary" onclick="window.location.href=''">¡Contactame!</button>
+    <main class="container-fluid" id="principal">
+            <div class="row justify-content-md-center align-items-center gradient" 
+                id="main-content">
+                <div class="col-12 col-md-4 text-center text-md-start">
+                    <h1 class="display-1 fw-bold letterColor">Nikolas Calvo</h1>
+                    <p class="fs-6 letterColor">Desarrollador Web FullStack</p>
+                    <p class="letterColor"><i class="bi bi-geo-alt"></i> Heredia, Costa Rica</p>
+                    <button class="btn btn-outline-light fw-bold" onclick="window.location.href='mailto:csam15161@gmail.com'">¡Contáctame!</button>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <img src="img/profile.jpg" alt="Foto de perfil" class="img-fluid d-block mx-auto">
+                </div>
+            </div>
+            <div class="social-divider">
+                <a href="https://www.linkedin.com/in/nikolas-calvo-zuñiga-015964394" target="_blank" class="social-icon" aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/panecitoagrio" target="_blank" class="social-icon" aria-label="GitHub" title="GitHub"><i class="bi bi-github"></i></a>
+                <a href="mailto:csam15161@gmail.com" target="_blank" class="social-icon" aria-label="Contacto" title="Contacto"><i class="bi bi-envelope"></i></a>
+                <a href="docs/CVNikolasCalvo.pdf" target="_blank" class="social-icon" aria-label="Curriculum" title="Curriculum"><i class="bi bi-file-earmark-person"></i></a>
+            </div>
     </main>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
