@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lato:wght@400;700;900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
 .navbar {
     position: absolute;
     inset: 0 0 auto 0;
@@ -8,15 +11,35 @@
     background-color: #171717;
 }
 
-.letterColor {
+.bodyLetters {
     color: white;
+    font-family: 'Fredoka', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2rem;
+    font-variation-settings: 'wght' 100;
+}
+
+.buttonText {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.mainText {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .gradient {
     background: linear-gradient(
         180deg,
         rgba(109, 65, 255, 1) 0%,
-        rgba(0, 0, 0, 0) 100%
+        #171717 80%
     );
     background-attachment: fixed;
     min-height: 100vh;
@@ -32,7 +55,7 @@
 .social-divider::after {
     content: "";
     flex: 1;
-    height: 4px;
+    height: 5px;
     background-color: #5521f1;
     border-radius: 2px;
 }
@@ -47,4 +70,12 @@
     color: #2fd4c0;
     transform: scale(1.2);
     transition: transform 0.2s;
+}
+
+.line {
+    flex-shrink: 0;
+    width: 150px;
+    height: 3px;
+    background: #5521f1;
+    margin-top: 0.3em;    
 }
