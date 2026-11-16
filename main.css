@@ -17,7 +17,7 @@
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-variation-settings: 'wght' 100;
 }
 
@@ -33,6 +33,20 @@
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
     font-style: normal;
+    font-size: clamp(2rem, 5vw, 4.5rem);
+}
+
+.sectionTitle {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+h5.mainText {
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+}
+
+.profileImage {
+    width: clamp(12rem, 30vw, 22rem);
+    padding-bottom: 0.5rem;
 }
 
 .gradient {
@@ -43,6 +57,14 @@
     );
     background-attachment: fixed;
     min-height: 100vh;
+}
+
+@media (max-width: 767.98px) {
+    .gradient {
+        min-height: auto;
+        padding-top: 4.5rem;
+        padding-bottom: 2rem;
+    }
 }
 
 .social-divider {
