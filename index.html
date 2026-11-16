@@ -38,16 +38,16 @@
                 <div class="social-divider">
                     <a href="https://www.linkedin.com/in/nikolas-calvo-zuñiga-015964394" 
                         target="_blank" class="social-icon" 
-                        aria-label="LinkedIn" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        aria-label="LinkedIn" title="LinkedIn" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="bi bi-linkedin"></i></a>
                     <a href="https://github.com/panecitoagrio" 
                         target="_blank" class="social-icon" 
-                        aria-label="GitHub" title="GitHub"><i class="bi bi-github"></i></a>
+                        aria-label="GitHub" title="GitHub" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="bi bi-github"></i></a>
                     <a href="mailto:csam15161@gmail.com" 
                         target="_blank" class="social-icon" 
-                        aria-label="Contacto" title="Contacto"><i class="bi bi-envelope"></i></a>
+                        aria-label="Contacto" title="Contacto" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="bi bi-envelope"></i></a>
                     <a href="docs/CVNikolasCalvo.pdf" 
                         target="_blank" class="social-icon" 
-                        aria-label="Curriculum" title="Curriculum"><i class="bi bi-file-earmark-person"></i></a>
+                        aria-label="Curriculum" title="Curriculum" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="bi bi-file-earmark-person"></i></a>
                 </div>
             </div>
     </main>
@@ -85,8 +85,7 @@
                                         href="img/FullStack-Certificate.png"
                                         target="_blank"
                                         rel="noopener">
-                                        Ver certificado
-                                    </a>
+                                        Ver certificado</a>
                         </div>
                         <!-- Título Python -->
                         <div class="mb-4">
@@ -100,8 +99,7 @@
                                 href="img/Python-Certificate.png"
                                 target="_blank"
                                 rel="noopener">
-                                Ver certificado
-                            </a>
+                                Ver certificado</a>
                         </div>
                         <!-- Titulo SQL -->
                         <div class="mb-4">
@@ -115,15 +113,57 @@
                                 href="img/SQL-Certificate.png"
                                 target="_blank"
                                 rel="noopener">Ver certificado</a>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-8">
+                <h1 class="mainText sectionTitle" id="skills">Habilidades</h1>
+                <div class="d-flex align-items-start gap-3">
+                    <span class="line"></span>
+                    <div class="flex-grow-1">
+                        <!--TODO: Contenido de habilidades -->
+                    </div>
+                </div>
+            </div>
 
+        </div>
+        <!-- Proyectos -->
+        <div class="row justify-content-md-center">
+            <div class="col-12 col-md-8">
+                <h1 class="mainText sectionTitle" id="proyectos">Proyectos</h1>
+                <span class="line d-block mb-3"></span>
+                <div class="d-flex flex-wrap gap-3">
+                    <!-- Proyecto 1 -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/profile.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <!-- Proyecto 2 -->
+                    <div class="card" style="width: 18rem;">
+                        <img src="img/profile.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.querySelectorAll('[data-bs-toggle="tooltip"]').forEach((element) => {
+            new bootstrap.Tooltip(element);
+        });
+    </script>
 </body>
 </html>
